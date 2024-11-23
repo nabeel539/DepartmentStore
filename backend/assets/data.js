@@ -33,6 +33,54 @@ export const productLists = [
     freeShipping: true,
   },
   {
+    name: "Samsung Z Fold 5",
+    description:
+      "Samsung's innovative foldable smartphone with a large screen and powerful performance.",
+    price: 1800,
+    image: "/assets/images/samsung_z_fold.jpg",
+    category: "Electronics",
+    subCategory: "Smartphones",
+    rating: 4.6,
+    reviews: [
+      {
+        user: "John Doe",
+        comment: "Amazing foldable display, a game changer!",
+        rating: 5,
+      },
+      {
+        user: "Emma White",
+        comment: "Great multitasking capabilities.",
+        rating: 4,
+      },
+    ],
+    inStock: true,
+    freeShipping: true,
+  },
+  {
+    name: "Samsung Galaxy S24 Ultra",
+    description:
+      "Flagship Samsung smartphone with exceptional performance and a pro-grade camera system.",
+    price: 1200,
+    image: "/assets/images/samsung_s24_ultra.png",
+    category: "Electronics",
+    subCategory: "Smartphones",
+    rating: 4.8,
+    reviews: [
+      {
+        user: "Chris Red",
+        comment: "The camera is fantastic, especially for night shots!",
+        rating: 5,
+      },
+      {
+        user: "Sophia Black",
+        comment: "Top-notch performance and display.",
+        rating: 5,
+      },
+    ],
+    inStock: true,
+    freeShipping: true,
+  },
+  {
     name: "Headphone",
     description:
       "Wireless noise-canceling headphones with immersive sound quality.",

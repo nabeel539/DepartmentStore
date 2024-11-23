@@ -1,20 +1,20 @@
 import { assets } from "@/assets/assets";
+import { ShopContext } from "@/context/ShopContext";
+import { useContext } from "react";
 
 const Footer = () => {
+  const { navigate } = useContext(ShopContext);
   return (
     <div className="bg-gradient-to-b from-gray-100 to-gray-50 py-12 px-4 sm:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-gray-700">
         {/* Logo and Description */}
         <div>
-          {/* <h2 className="text-3xl font-bold tracking-wide mb-4">
-            FOREVER<span className="text-pink-400">.</span>
-          </h2> */}
           <img src={assets.logo} className="w-36" alt="Logo" />
           <p className="text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
+            Your one-stop destination for quality products at unbeatable prices!
+            From groceries to electronics, fashion, and home essentials, we
+            bring you a curated selection of the finest items to enhance your
+            lifestyle. Visit us today for an unparalleled shopping experience.
           </p>
         </div>
 
@@ -23,14 +23,20 @@ const Footer = () => {
           <h3 className="text-lg font-bold mb-4">COMPANY</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-gray-900">
+              <button
+                onClick={() => navigate("/")}
+                className="hover:text-gray-900"
+              >
                 Home
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-900">
+              <button
+                onClick={() => navigate("/about")}
+                className="hover:text-gray-900"
+              >
                 About Us
-              </a>
+              </button>
             </li>
             <li>
               <a href="#" className="hover:text-gray-900">

@@ -50,7 +50,7 @@ const ShopContextProvider = (props) => {
         console.error("Error calculating cart count:", error);
       }
     }
-    console.log("carts count", totalCount);
+    // console.log("carts count", totalCount);
 
     return totalCount;
   };

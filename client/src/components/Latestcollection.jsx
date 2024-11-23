@@ -1,8 +1,6 @@
 import { useContext, useEffect, useState } from "react";
-// import { ShopContext } from "../context/ShopContext";
 import Title from "./Title";
 import Productitem from "./Productitem";
-// import { productLists } from "@/assets/assets";
 import { ShopContext } from "@/context/ShopContext";
 
 const Latestcollection = () => {
@@ -10,8 +8,6 @@ const Latestcollection = () => {
   const [latestproduct, setLatestproduct] = useState([]);
 
   useEffect(() => {
-    // console.log(products); // Check the content of products
-    console.log(products);
     setLatestproduct(products.slice(0, 10));
   }, [products]);
 
@@ -20,8 +16,8 @@ const Latestcollection = () => {
       <div className="text-center py-8 text-3xl">
         <Title text1={"LATEST"} text2={"COLLECTION"} />
         <p className="w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi qui
-          dolore nihil
+          Explore our latest collection featuring stylish apparel, trendy
+          accessories, and must-have essentials to elevate your everyday life.
         </p>
       </div>
 

@@ -8,8 +8,8 @@ const NewslatterBox = () => {
         Subsribe Now & Get 20% Off
       </p>
       <p className="text-gray-400 mt-3">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
-        voluptatibus ullam consectetur libero ea eum!
+        Stay updated with the latest trends, exclusive offers, and new arrivals!
+        Subscribe to our newsletter and never miss out on exciting updates.
       </p>
 
       <form
